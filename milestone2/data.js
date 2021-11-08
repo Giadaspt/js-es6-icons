@@ -116,3 +116,5 @@ const cards = [
 ];
 
 //document.querySelector('main').innerHTML = '';
+
+// per prendere solo gli oggetti con proprietà colore per prima cosa creo una classe css con il colore.
