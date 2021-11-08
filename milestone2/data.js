@@ -140,22 +140,19 @@ function allCards(cards){
 		let name = cards[card].name;
 		let family = cards[card].family;
 		let prefix = cards[card].prefix;
-		//console.log(name);
-		//console.log(family);
-		//console.log(prefix);
+		let color = cards[card].color;
 
 		all_card.innerHTML += `
 		<div class="col-2 card d-flex justify-content-end align-items-center m-3">
 			<div class="icons">
-				<i class="${family +' '+ prefix + name}"></i>
+				<i class="${family +' '+ prefix + name}" style="color: ${color} "></i>
 			</div>
-			<p>${cards[card].name}</p>
+			<p>${name}</p>
 		</div>
 
 		`;
 	}
 }
-
 
 //unisco i valori family prefix e name così da crere l'icona
 // function icon(cards){
