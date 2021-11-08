@@ -116,3 +116,30 @@ const cards = [
 ];
 
 //document.querySelector('main').innerHTML = '';
+
+document.querySelector('.row-card').innerHTML = `
+<div class="col-2 card d-flex justify-content-end align-items-center m-3">
+          <div class="icons">
+            <i class="${cards.family, cards.prefix}"></i>
+          </div>
+          <p>${cards.name}</p>
+        </div>
+`;
+
+//unisco i valori family prefix e name così da crere l'icona
+function icon(card){
+	for(let icon in card){
+		console.log('icona', card[icon]);
+	}
+}
+
+
+
+// function viewCards(){
+// 	for(let card in cards){
+
+// 		document.querySelector('.row-card').innerHTML += allCards(card);
+// 	}
+// }
+
+//console.log(viewCards(cards));

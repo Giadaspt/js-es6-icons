@@ -12,15 +12,23 @@ header{
   background-color: rgb(41,177,221);
 }
 
-.conteiner-gs-80{
-  width: 80%;
-}
-
 .card {
   text-transform: uppercase;
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 4px 5px rgb(95, 95, 95);
+}
+
+.animalorange {
+  color: #0000ff;
+}
+
+.vegetablesgreen {
+  color: #ffa500;
+}
+
+.otherblue {
+  color: #800080;
 }
 
 .icons i{
