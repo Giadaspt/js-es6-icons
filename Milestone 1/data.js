@@ -1,4 +1,6 @@
-[
+
+
+const cards = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +114,5 @@
 		color: 'blue'
 	}
 ];
+
+//document.querySelector('main').innerHTML = '';
