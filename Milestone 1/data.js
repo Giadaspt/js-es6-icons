@@ -129,50 +129,50 @@ const cards = [
 ];
 
 //document.querySelector('.row-card').innerHTML = '';
-allCards(cards)
+allCards(cards);
+
 function allCards(cards){
 
 	let all_card = document.querySelector('.row-card');
 
 	for(let card in cards){
 
+		let name = cards[card].name;
+		let family = cards[card].family;
+		let prefix = cards[card].prefix;
+		console.log(name);
+		console.log(family);
+		console.log(prefix);
+
 		all_card.innerHTML += `
 		<div class="col-2 card d-flex justify-content-end align-items-center m-3">
 			<div class="icons">
-				<i class="${icon(cards)}"></i>
+				<i class="${family +' '+ prefix + name}"></i>
 			</div>
-			<p>${cards[0].name}</p>
+			<p>${cards[card].name}</p>
 		</div>
+
 		`;
 	}
 }
 
 
 //unisco i valori family prefix e name così da crere l'icona
-function icon(cards){
+// function icon(cards){
 	
-	let final;
+// 	let final;
 
-	for(let icon in cards){
+// 	for(let icon in cards){
 
-		let name = cards[icon].name;
-		let family = cards[icon].family;
-		let prefix = cards[icon].prefix;
+// 		let name = cards[icon].name;
+// 		let family = cards[icon].family;
+// 		let prefix = cards[icon].prefix;
 
-		final = family +' '+ prefix + name;
-		console.log(final);
-	}
-
-	return final;
-}
-
-
-
-// function viewCards(){
-// 	for(let card in cards){
-
-// 		document.querySelector('.row-card').innerHTML += allCards(card);
+// 		final = family +' '+ prefix + name;
+// 		//console.log(final);
 // 	}
+
+// 	return final;
 // }
 
-//console.log(viewCards(cards));
+
