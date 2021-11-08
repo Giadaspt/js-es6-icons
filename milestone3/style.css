@@ -1,0 +1,25 @@
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+header{
+  font-family: 'Acme', sans-serif;
+  color: rgb(41,177,221);
+}
+
+.row-main{
+  height: 80px;
+  background-color: rgb(41,177,221);
+}
+
+.card {
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 4px 5px rgb(95, 95, 95);
+}
+
+.icons i{
+  padding-top: 24px;
+  font-size: 60px;
+}
